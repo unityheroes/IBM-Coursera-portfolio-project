@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Atef - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ahmed Atef
+          <div class="contact_info">
+            <i class="fas fa-envelope"></i>
+            ahmed.atef@example.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <i class="fas fa-phone"></i>
+            +20 123 456 7890
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="images/profile-image.png" alt="Ahmed Atef" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Ahmed Atef! <i class="fas fa-hand-wave" style="font-size: 40px;"></i>
+          </h1>
+          <p>
+            I am a passionate web developer with expertise in front-end technologies. I love creating interactive and user-friendly websites that provide great user experiences. With over 1 year of experience in the industry, I have worked on various projects ranging from small business websites to large enterprise applications.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <i class="fab fa-html5" style="font-size: 60px; color: #e34c26;"></i>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <i class="fab fa-css3-alt" style="font-size: 60px; color: #264de4;"></i>
+          <h6>CSS</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <i class="fab fa-js-square" style="font-size: 60px; color: #F0DB4F;"></i>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <i class="fab fa-react" style="font-size: 60px; color: #61DBFB;"></i>
+          <h6>React</h6>
+          <p>6 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <i class="fab fa-node-js" style="font-size: 60px; color: #3C873A;"></i>
+          <h6>Node.js</h6>
+          <p>6 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <i class="fab fa-python" style="font-size: 60px; color: #306998;"></i>
+          <h6>Python</h6>
+          <p>1 year experience</p>
+        </div>  
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>E-Commerce Website</h3>
+            <ul>
+              <li>Developed a fully functional e-commerce platform with shopping cart, user authentication, and payment processing using React and Node.js</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Server Management System</h3>
+            <ul>
+              <li>Created a Discord bot task management tool with Discord.js for efficient server management</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>PHBot Plugin Python</h3>
+            <ul>
+              <li>Developed a Python plugin to help players make activity using PHBot for game automation</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion E-Commerce Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for payment gateway</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ahmed is an exceptional developer who delivers high-quality work on time. His attention to detail is remarkable.
+          <span>&#8221;</span>
+          <p><strong>- Sarah, Project Manager</strong></p>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Ahmed was a great experience. He understands requirements quickly and implements solutions effectively.
+          <span>&#8221;</span>
+          <p><strong>- Michael, UX Designer</strong></p>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ahmed's technical skills and problem-solving abilities make him a valuable asset to any development team.
+          <span>&#8221;</span>
+          <p><strong>- Ahmed, Team Lead</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" id="recommender_name" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <i class="fas fa-check-circle" style="font-size: 60px; color: #28a745;"></i>
+      <h3>Thanks for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Ahmed Atef. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

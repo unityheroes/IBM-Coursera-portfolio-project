@@ -1,0 +1,477 @@
+:root {
+  --primary-color: #7600bc;
+  --secondary-color: #35424a;
+  --accent-color: #e8491d;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: var(--dark-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  margin: -1cm;
+  margin-bottom: 1.5cm;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100px;
+}
+
+#home {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.profile_name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  color: lightgray;
+  font-size: 0.8rem;
+}
+
+.contact_info i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.topdiv {
+  display: flex;
+}
+
+.topmenu {
+  color: lightgray;
+  margin: 0 10px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.topmenu:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#about-me {
+  margin: 30px auto;
+}
+
+
+.profile_image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about-me h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+#about-me p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin: 30px 0;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.introduction {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+
+#skills {
+  background-color: var(--light-color);
+  padding: 50px 0;
+  margin: 30px -1cm;
+}
+
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  width: 160px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill h6 {
+  font-size: 1.1rem;
+  margin: 12px 0 5px;
+  color: var(--secondary-color);
+}
+
+.skill p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.projects {
+  padding: 50px 0;
+  margin: 30px -1cm;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.project-card li {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-left: 15px;
+}
+
+.projects-container hr {
+  border: 1px solid #eee;
+  margin: 25px auto;
+  width: 80%;
+}
+
+#recommendations {
+  background-color: var(--light-color);
+  padding: 50px 0;
+  margin: 30px -1cm;
+}
+
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recommendation {
+  background: white;
+  font-style: italic;
+  text-align: left;
+  width: 320px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  height: auto;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendation span {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.recommendation p {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.popup {
+  width: 350px;
+  background-color: white;
+  border-radius: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  padding: 25px;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--primary-color);
+  animation: popupFadeIn 0.4s ease-out;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.popup i {
+  font-size: 50px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.popup h3 {
+  margin: 15px 0;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.popup button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.popup button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+#contact {
+  padding: 50px 0;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  width: 90%;
+  max-width: 550px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  font-family: inherit;
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(118, 0, 188, 0.1);
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.iconbutton {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+
+.iconbutton:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.iconbutton a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 0 -1cm;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile_name {
+    margin-bottom: 15px;
+  }
+  
+  .topdiv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .topmenu {
+    margin: 3px;
+    font-size: 0.8rem;
+  }
+  
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile_image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .skill {
+    width: 130px;
+    padding: 12px;
+  }
+  
+  .recommendation {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+  
+  .popup {
+    width: 85%;
+    max-width: 300px;
+    padding: 20px;
+  }
+  
+  nav {
+    height: auto;
+    padding: 8px 0;
+  }
+}
